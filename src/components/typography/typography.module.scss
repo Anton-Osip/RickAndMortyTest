@@ -1,0 +1,53 @@
+@mixin text-style($fontFamily, $fontSize, $lineHeight, $fontWeight) {
+  margin: 0;
+
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+}
+
+.Text1 {
+  @include text-style(
+    var(--second-family),
+    var(--font-size-m),
+    var(--line-height-s),
+    var(--font-weight-regular)
+  );
+}
+
+.Text2 {
+  @include text-style(
+    var(--second-family),
+    var(--font-size-s),
+    var(--line-height-l),
+    var(--font-weight-regular)
+  );
+}
+
+.BoldText {
+  @include text-style(
+    var(--second-family),
+    var(--font-size-s),
+    var(--line-height-l),
+    var(--font-weight-bold)
+  );
+}
+
+.Title1 {
+  @include text-style(
+    var(--font-family),
+    var(--font-size-xxl),
+    var(--line-height-l),
+    var(--font-weight-regular)
+  );
+}
+
+.Title2 {
+  @include text-style(
+    var(--font-family),
+    var(--font-size-xl),
+    var(--line-height-l),
+    var(--font-weight-regular)
+  );
+}
