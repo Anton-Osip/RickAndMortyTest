@@ -1,0 +1,17 @@
+.card {
+  width: 100%;
+  min-width: 290px;
+  padding: 20px 34px;
+  box-shadow: 0 7px 25px 0 rgb(100 100 111 / 20%);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+}
