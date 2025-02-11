@@ -1,7 +1,12 @@
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   width: 100%;
   min-width: 290px;
   padding: 20px 34px;
+
   box-shadow: 0 7px 25px 0 rgb(100 100 111 / 20%);
 }
 
@@ -14,4 +19,34 @@
 .status {
   display: flex;
   align-items: center;
+}
+
+.heading {
+  aspect-ratio: 788/262;
+  width: calc(50% - 10px);
+}
+
+.normal {
+  aspect-ratio: 518/150;
+  width: calc(33% - 13px);
+}
+
+@media (width <= 1026px) {
+  .heading {
+    width: 100%;
+  }
+
+  .normal {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (width <= 658px) {
+  .heading {
+    width: 100%;
+  }
+
+  .normal {
+    width: 100%;
+  }
 }

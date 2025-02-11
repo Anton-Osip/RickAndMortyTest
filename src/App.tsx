@@ -1,3 +1,9 @@
+import { SearchCharacters } from '@/features'
+
 export function App() {
-  return <div>Hello</div>
+  return (
+    <div>
+      <SearchCharacters />
+    </div>
+  )
 }

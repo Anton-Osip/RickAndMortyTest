@@ -9,14 +9,15 @@ type Props = {
   status: 'Alive' | 'Dead' | 'unknown'
   created: string
   className?: string
+  url: string
 } & ComponentPropsWithoutRef<'div'>
 
-export const Card = ({ type, title, status, created, className }: Props) => {
+export const Card = ({ url, type, title, status, created, className }: Props) => {
   const classNames = clsx(s.card, s[type], className)
   const colors = { Alive: '#267504', Dead: '#820a0a', unknown: '#656ec2' }
 
   return (
-    <div className={classNames}>
+    <a href={url} className={classNames}>
       {type === 'heading' ? (
         <Typography.Title1>{title}</Typography.Title1>
       ) : (
@@ -29,6 +30,6 @@ export const Card = ({ type, title, status, created, className }: Props) => {
         </div>
         {type === 'heading' && <Typography.Text2>Created:&nbsp;{created}</Typography.Text2>}
       </div>
-    </div>
+    </a>
   )
 }
