@@ -16,11 +16,13 @@ export const NormalCard: Story = {
     title: 'Stair Goblin - Mythological Creature',
     status: 'Alive',
     created: '04.11.2017',
+    url: 'http://localhost',
   },
 }
 
 export const HeadingCard: Story = {
   args: {
+    url: 'http://localhost',
     type: 'heading',
     title: 'Stair Goblin - Mythological Creature',
     status: 'Dead',
